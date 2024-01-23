@@ -1,0 +1,71 @@
+.container {
+    max-width: 440px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 33px;
+  }
+  
+  .form-control {
+    font-size: 14px;
+    border-radius: 1px;
+  }
+  
+  ol {
+    padding-left: 16px;
+  }
+  
+  .result-link, .link {
+    word-break: break-all;
+    line-height: 21px;
+  }
+  
+  .link {
+    border-radius: 2px;
+  }
+  
+  .btn {
+    border-radius: 0;
+  }
+  
+  .btn-primary {
+    background-color: #37DA01;
+    color: #000;
+    font-weight: normal;
+    outline: #37DA01;
+    border-color: #37DA01;
+  }
+  
+  .btn-primary:hover {
+    background-color: #30C100;
+    color: #000;
+    border-color: #30C100;
+  }
+  
+  h4 {
+    
+  }
+  
+  h6, h4 {
+    text-align: center;
+  }
+  
+  .btn input {
+    visibility: hidden;
+    position: absolute;
+  }
+    
+  .btn-secondary {
+    background: none;
+    color: #666;
+  } 
+  .btn.disabled {
+      opacity: 0.3;
+      color: #000;
+      background: #bbb;
+  }
+  
+  
+  .row {
+        white-space: nowrap;
+  }

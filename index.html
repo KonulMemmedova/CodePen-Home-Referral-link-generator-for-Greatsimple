@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>web login</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <h4>Referral link generator</h4>
+        <br>
+        <form action="">
+            <div class="form-group ">
+                <div class="row">
+                    <label class="col-5">Paddle's vendor_id 
+                      <sup data-toggle="popover" class="badge badge-pill badge-info" title="How to get your <i>vendor_id</i> ?" data-html="true"  data-content="<ol start='0'><li> Register on <a href='#'>vendor.paddle.com</a> (it takes about one minute).
+                                                                                                                                                       <li>Go to your  <a href='https://vendors.paddle.com/account'>paddle's account</a>.
+                                                                                                                                                       <li>Open 'integrations' section.
+                                                                                                                                                       <li>Here it is!
+                                                                                                                                                       ">?</sup> 
+                    </label>
+                    <div class="col-7">
+                        <input class="form-control " required name="vendor_id" placeholder="eg. 54321">
+                    </div>
+                </div>
+                <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group row">
+                <label class="col-5">Promotion type</label>
+                <div class="btn-group col-7" data-toggle="buttons">
+                    <label class="btn btn-secondary form-control">
+                        <input type="radio" value="0" name="promo_type" >company
+                    </label>
+                    <label class="btn btn-secondary form-control">
+                        <input type="radio" value="1" name="promo_type">product
+                    </label>
+                </div>
+            </div>
+            <div class="collapse show" id="collapseProduct">
+                <div class="form-group row">
+                    <label class="col-5">Product to promote</label>
+                    <div class="col-7">
+                        <select required class="form-control" name="product">
+                          
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-5">Land traffic</label>
+                    <div class="btn-group col-7" data-toggle="buttons">
+                        <label class="btn btn-secondary form-control">
+                            <input type="radio" value="0" name="land_type">promo site
+                        </label>
+                        <label class="btn btn-secondary form-control">
+                            <input type="radio" value="1" name="land_type">checkout
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row collapse product-version">
+                    <label class="col-5">Version</label>
+                    <div class="btn-group col-7" data-toggle="buttons">
+    
+                        <label class="btn btn-secondary form-control">
+                            <input type="radio" value="1" name="product_version">full
+                        </label>
+                        <label class="btn btn-secondary form-control">
+                            <input type="radio" value="0" name="product_version">demo
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <a class="utm-show btn btn-link btn-sm btn-block" data-toggle="collapse" href="#utm_fields" aria-expanded="false">
+                    Advanced: set utm-labels
+                </a>
+            </div>
+            <div>
+                <div class="collapse" id="utm_fields">
+    
+                    <h6>UTM Campaing labels</h6>
+    
+                    <div class="form-group row">
+                        <label class="col-5">Source</label>
+                        <div class="col-7">
+                            <input class="form-control" name="utm_source">
+    
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-5">Medium</label>
+                        <div class="col-7">
+                            <input class="form-control" name="utm_medium">
+    
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-5">Campaign</label>
+                        <div class="col-7">
+                            <input class="form-control" name="utm_campaign">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary form-control btn-lg " value="Generate link">
+                </div>
+            </div>
+    
+        </form>
+        <div class="invisible link alert alert-success" role="alert">
+            <strong>Your link:</strong> <a class="result-link" target="_blank"></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
